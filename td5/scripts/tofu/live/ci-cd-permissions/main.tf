@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-2"
+  region = "eu-north-1"
 }
 
 module "oidc_provider" {
@@ -18,13 +18,13 @@ module "iam_roles" {
   enable_iam_role_for_testing = true                            
 
   # TODO: fill in your own repo name here!
-  github_repo      = "brikis98/fundamentals-of-devops-examples" 
+  github_repo      = "Yak0vkaSup/esiee_devops" 
   lambda_base_name = "lambda-sample"                            
 
   enable_iam_role_for_plan  = true                                
   enable_iam_role_for_apply = true                                
 
   # TODO: fill in your own bucket and table name here!
-  tofu_state_bucket         = "fundamentals-of-devops-tofu-state" 
-  tofu_state_dynamodb_table = "fundamentals-of-devops-tofu-state" 
+  tofu_state_bucket         = "s3-bucket-esiee" 
+  tofu_state_dynamodb_table = "devops-esiee" 
 }

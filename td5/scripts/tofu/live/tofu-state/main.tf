@@ -3,7 +3,8 @@ provider "aws" {
 }
 
 module "state" {
-  source = "https://github.com/Yak0vkaSup/esiee_devops/tree/test-workflow/td5/scripts/tofu/modules/state-bucket"
+  source = "brikis98/devops/book//modules/state-bucket"
+  version = "1.0.0"
 
   # TODO: fill in your own bucket name!
   name = "s3-bucket-esiee"
