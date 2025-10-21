@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+
+# Terraform / OpenTofu local artifacts (do NOT commit)
+**/.terraform/**
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Large binaries (avoid committing platform executables)
+*.exe
+
+
